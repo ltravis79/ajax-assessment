@@ -1,0 +1,14 @@
+<h1>Lindsey's To Do List</h1>
+
+<ul id="task_list">
+	<% @tasks.each do |task| %>
+	<li><%= task.task_name %><form class="delete_form"><input type="hidden" name="_method" value="delete"><input type="submit" id='<%= task.id %>' class="delete_button" value="Delete"></form></li>
+	<% end %>
+</ul>
+
+<a href="/tasks/new" id="new_task">Create New Task</a>
+
+<!-- <form id="new_task" method="POST" action="/tasks">
+	<input type="text" id="task_name" name="task_name" placeholder="Enter new task name">
+	<input type="submit" id="submit_button" value="Submit Task">
+</form> -->
