@@ -58,15 +58,9 @@ $(document).ready(function() {
   		console.log("Failed Delete");
   		console.log(response);
   	})
-  	// QUESTIONS for Shambhavi --
-  	// Should controller return boolean values here?  Strings?
+  	// Delete button no longer removes the item after trrying to change controller to 
+  	// allow for non-javascript sessions.  I think I need to adjust how the items are referenced by id.
+  	// Adding individual forms may have messed up my references?
   })
 });
 
-
-// $('#get_color').on('click', function(e){
-//  +    e.preventDefault();
-//  +    $.ajax({
-//  +      method: "POST",
-//  +      url: "/color"
-//  +    })
